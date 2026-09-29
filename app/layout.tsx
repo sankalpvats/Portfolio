@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
-const origin='https://sankalp-vats-portfolio.vatssankalp19.chatgpt.site';
+import { siteUrl as origin } from '@/lib/site-url';
 const title='Sankalp Vats — AI/ML & Software Developer';
 const description='Sankalp Vats is an IIT (BHU) student and AI/ML & Software Developer building intelligent systems, full-stack applications and machine learning solutions.';
 export const metadata: Metadata={metadataBase:new URL(origin),title,description,alternates:{canonical:'/'},openGraph:{title,description,type:'website',url:origin,siteName:'Sankalp Vats'},twitter:{card:'summary',title,description},icons:{icon:'/favicon.svg',shortcut:'/favicon.svg'}};

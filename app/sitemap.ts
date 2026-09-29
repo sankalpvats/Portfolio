@@ -1,2 +1,3 @@
 import type { MetadataRoute } from 'next';
-export default function sitemap(): MetadataRoute.Sitemap {return [{url:'https://sankalp-vats-portfolio.vatssankalp19.chatgpt.site',changeFrequency:'monthly',priority:1}]}
+import { siteUrl } from '@/lib/site-url';
+export default function sitemap(): MetadataRoute.Sitemap {return [{url:siteUrl,changeFrequency:'monthly',priority:1}]}
